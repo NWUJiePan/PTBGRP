@@ -1,0 +1,54 @@
+python -m openne --method deepWalk --input data/new/PositiveSample_Train.txt --graph-format edgelist --output Behavior.txt --representation-size 64
+python -m openne --method deepWalk --input data/new/Maize.txt --graph-format edgelist --output Behavior1.txt --representation-size 64
+python -m openne --method deepWalk --input data/new/Papill.txt --graph-format edgelist --output PapilldeepwalkBehavior1.txt --representation-size 64
+python -m openne --method sdne --input data/new/Papill.txt --graph-format edgelist --output PapillsdnekBehavior1.txt --representation-size 64
+
+
+python -m openne --method sdne --input data/new/Influenza.txt --graph-format edgelist --output Influenza_sdne_Behavior1.txt --representation-size 64
+python -m openne --method deepWalk --input data/new/Influenza.txt --graph-format edgelist --output Influenza_deepWalk_Behavior1.txt --representation-size 64
+
+python -m openne --method sdne --input data/new/Herpes.txt --graph-format edgelist --output HV_sdne_Behavior1.txt --representation-size 64
+python -m openne --method deepWalk --input data/new/Herpes.txt --graph-format edgelist --output HV_deepWalk_Behavior1.txt --representation-size 64
+
+
+
+python -m openne --method sdne --input data/new/DNARBPHOSTALL.txt --graph-format edgelist --output data/new/phage_host_sdne.txt --representation-size 32
+
+python -m openne --method deepWalk --input data/new/DNARBPHOSTALL.txt --graph-format edgelist --output ALL_phi_deepwalk.txt --representation-size 64
+
+python -m openne --method hope --input data/new/DNARBPHOSTALL.txt --graph-format edgelist --output ALL_phi_hope_Behavior64.txt --representation-size 64
+
+
+python -m openne --method lap --input data/new/DNARBPHOSTALL.txt --graph-format edgelist --output ALL_phi_lap_Behavior64.txt --representation-size 64
+
+
+
+
+python -m openne --method line --input data/new/DNARBPHOSTALL.txt --graph-format edgelist --output ALL_phi_line_Behavior64.txt --representation-size 64
+
+
+choose from 'node2vec', 'deepWalk', 'line', 'gcn', 'grarep', 'tadw', 'lle', 'hope', 'lap', 'gf', 'sdne'
+在2下面的Openne
+python -m openne --method node2vec --input data/new/baoman_pairs.txt --graph-format edgelist --output data/new/baoman_node.txt --representation-size 64
+
+python -m openne --method node2vec --input data/new/tonglv_pairs.txt --graph-format edgelist --output data/new/tonglv_node.txt --representation-size 64
+
+python -m openne --method node2vec --input data/new/jinghuang_pairs.txt --graph-format edgelist --output data/new/jinghuang_node.txt --representation-size 64
+
+python -m openne --method node2vec --input data/new/jinghuang_pairs.txt --graph-format edgelist --output data/new/jinghuang_node.txt --representation-size 64
+
+python -m openne --method node2vec --input data/new/changganjun_pairs.txt --graph-format edgelist --output data/new/changganjun_node.txt --representation-size 64
+
+python -m openne --method node2vec --input data/new/feiyan_pairs.txt --graph-format edgelist --output data/new/feiyan_node.txt --representation-size 64
+
+python -m openne --method node2vec --input data/new/shichang_pairs.txt --graph-format edgelist --output data/new/shichang_node.txt --representation-size 64
+
+python -m openne --method node2vec --input data/new/phagehost_pairs988.txt --graph-format edgelist --output data/new/phage_host_node16.txt --representation-size 16
+python -m openne --method node2vec --input data/new/phagehost_pairs988.txt --graph-format edgelist --output data/new/phage_host_node32.txt --representation-size 32
+python -m openne --method node2vec --input data/new/phagehost_pairs988.txt --graph-format edgelist --output data/new/phage_host_node128.txt --representation-size 128
+
+
+python -m openne --method line --input data/new/phagehost_pairs988.txt --graph-format edgelist --output data/new/phage_host_nodeline64.txt --representation-size 64
+python -m openne --method deepWalk --input data/new/phagehost_pairs988.txt --graph-format edgelist --output data/new/phage_host_nodedeepwalk64.txt --representation-size 64
+python -m openne --method hope --input data/new/phagehost_pairs988.txt --graph-format edgelist --output data/new/phage_host_nodehope64.txt --representation-size 64
+
