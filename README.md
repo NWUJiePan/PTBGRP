@@ -19,4 +19,4 @@ Please feel free to contact us if you need any help.
 
 ●	Extensive ablation and comparison experiments demonstrated the excellent of the presented model.
 
-●	Case studies of three pathogenic bacteria supposed the predictive power of PTBGRP.
+●	Case studies of two pathogenic bacteria supposed the predictive power of PTBGRP.
