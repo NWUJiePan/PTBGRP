@@ -14,6 +14,9 @@ Please feel free to contact us if you need any help.
 
 ## Main contribution
 ●	PTBGRP integrated the higher-level biological information with the lower-level topological features, which provided a novel insight to improve the prediction of phage-host interactions. 
+
 ●	PTBGRP constructed a novel microbial heterogeneous interaction network
+
 ●	Extensive ablation and comparison experiments demonstrated the excellent of the presented model.
+
 ●	Case studies of three pathogenic bacteria supposed the predictive power of PTBGRP.
